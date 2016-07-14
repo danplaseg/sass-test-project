@@ -1,32 +1,66 @@
-$background-color:#ecf0f1;
-$title-color:#3498db;
-$font-title: 'Open Sans', sans-serif;
+//Importing files
+@import 'reset';
 
-@mixin buttons($width, $height){
-  background-color:$background-color;
+//Defining Variables
+$background-color:#ecf0f1;
+$main-color:#3498db;
+$font-title: 'Open Sans', sans-serif;
+$hover-color:#2980b9;
+
+//Adding Mixins
+@mixin buttons($width, $height,$font-size){
+  background-color:$main-color;
+  font-size:$font-size;
   color:#ffffff;
   border-radius:5%;
+  border:none;
   outline:none;
   width:$width;
   height:$height;
-  content:'button';
+  transition-property:background-color;
+  transition-duration:.4s;
+  display:block;
+  margin-bottom:10px;
 }
 
-
-
 body{
+  padding:50px;
   font-family:$font-title;
   background-color:$background-color;
 }
 
 h1{
-  color:$title-color;
+  font-size:32px;
+  color:$main-color;
+  margin-bottom:20px;
 }
 
 h2{
-  color:desaturate($title-color, 30);
+  font-size:24px;
+  color:desaturate($main-color, 30);
+  margin-bottom:15px;
+}
+
+h3{
+  font-size:22px;
+  color:desaturate($main-color,60);
+  margin-bottom:10px;
 }
 
 .big-button{
-  @include buttons(100px, 50px);
+  @include buttons(150px, 60px, 16px);
+}
+
+.medium-button{
+  @include buttons(125px, 50px, 14px);
+}
+
+.small-button{
+  @include buttons(100px, 40px, 12px);
+}
+
+.big-button,.medium-button, .small-button{
+  &:hover{
+    background-color:$hover-color;
+  }
 }
