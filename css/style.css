@@ -144,4 +144,20 @@ h4 {
   display: block;
   margin-bottom: 10px; }
 
+.clear {
+  clear: both; }
+
+.card {
+  background-color: #ffffff;
+  width: 300px;
+  display: block;
+  float: left;
+  box-shadow: 1px #000000; }
+  .card img {
+    width: 100%;
+    display: block;
+    float: left; }
+  .card p {
+    padding: 20px; }
+
 /*# sourceMappingURL=style.css.map */

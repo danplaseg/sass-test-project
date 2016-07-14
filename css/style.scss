@@ -118,3 +118,26 @@ h4{
 .small-button{
   @include buttons(100px, 40px, 12px);
 }
+
+.clear{
+  clear:both;
+}
+
+.card{
+  background-color:#ffffff;
+  width:300px;
+  display:block;
+  float:left;
+  box-shadow:1px #000000;
+
+  img{
+    width:100%;
+    display:block;
+    float:left;
+  }
+
+  p{
+    padding:20px;
+  }
+
+}
