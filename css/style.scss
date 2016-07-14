@@ -1,0 +1,32 @@
+$background-color:#ecf0f1;
+$title-color:#3498db;
+$font-title: 'Open Sans', sans-serif;
+
+@mixin buttons($width, $height){
+  background-color:$background-color;
+  color:#ffffff;
+  border-radius:5%;
+  outline:none;
+  width:$width;
+  height:$height;
+  content:'button';
+}
+
+
+
+body{
+  font-family:$font-title;
+  background-color:$background-color;
+}
+
+h1{
+  color:$title-color;
+}
+
+h2{
+  color:desaturate($title-color, 30);
+}
+
+.big-button{
+  @include buttons(100px, 50px);
+}

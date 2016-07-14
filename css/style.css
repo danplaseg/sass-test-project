@@ -1,0 +1,20 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #ecf0f1; }
+
+h1 {
+  color: #3498db; }
+
+h2 {
+  color: #5891b7; }
+
+.big-button {
+  background-color: #ecf0f1;
+  color: #ffffff;
+  border-radius: 5%;
+  outline: none;
+  width: 100px;
+  height: 50px;
+  content: 'button'; }
+
+/*# sourceMappingURL=style.css.map */
