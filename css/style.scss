@@ -4,8 +4,10 @@
 //Defining Variables
 $background-color:#ecf0f1;
 $main-color:#3498db;
-$font-title: 'Open Sans', sans-serif;
+$font-title: 'Roboto', sans-serif;
 $default-button-color:#3498db;
+$alert-button-color:#e74c3c;
+$success-button-color:#2ecc71;
 
 //Adding Mixins
 @mixin buttons($width, $height,$font-size){
@@ -24,12 +26,41 @@ $default-button-color:#3498db;
 
 //Styling
 body{
-  padding:50px;
   font-family:$font-title;
   background-color:$background-color;
 }
 
+.navbar{
+  top:0;
+  left:0;
+  position:fixed;
+  padding-left:50px;
+  width:100%;
+  height:60px;
+  background-color:#bdc3c7;
+
+  img{
+    display:block;
+    float:left;
+    height:40px;
+  }
+
+  li{
+    display:block;
+    float:left;
+    color:#ffffff;
+    line-height:60px;
+  }
+
+}
+
+#content{
+  margin-top:50px;
+  padding:50px;
+}
+
 h1{
+  font-weight:bold;
   font-size:32px;
   color:$main-color;
   margin-bottom:20px;
@@ -47,9 +78,34 @@ h3{
   margin-bottom:10px;
 }
 
-.default{
-  background-color:
+h4{
+  font-size:18px;
 }
+
+.default{
+  background-color:$default-button-color;
+
+  &:hover{
+    background-color:desaturate($default-button-color, 20);
+  }
+}
+
+.success{
+  background-color:$success-button-color;
+
+  &:hover{
+    background-color:desaturate($success-button-color, 20);
+  }
+
+}
+
+.alert{
+  background-color:$alert-button-color;
+  &:hover{
+    background-color:desaturate($alert-button-color, 20);
+  }
+}
+
 
 .big-button{
   @include buttons(150px, 60px, 16px);
