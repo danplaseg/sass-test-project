@@ -152,7 +152,8 @@ h4 {
   width: 300px;
   display: block;
   float: left;
-  box-shadow: 1px #000000; }
+  margin-right: 20px;
+  box-shadow: 1px 1px 20px #000000; }
   .card img {
     width: 100%;
     display: block;
