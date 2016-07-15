@@ -60,12 +60,14 @@ body {
   .navbar img {
     display: block;
     float: left;
-    height: 40px; }
+    height: 40px;
+    margin-top: 10px; }
   .navbar li {
     display: block;
     float: left;
     color: #ffffff;
-    line-height: 60px; }
+    line-height: 60px;
+    margin-left: 10px; }
 
 #content {
   margin-top: 50px;
