@@ -142,5 +142,21 @@ h4{
   p{
     padding:20px;
   }
+ 
+}
 
+@mixin inputs($height, $width) {
+	width: $width;
+	height: $height;
+	font-family: fantasy;
+}
+
+.input_text {
+	@include inputs(50px, 200px);
+	border-color: red;
+}
+
+.input_number {
+	@include inputs(50px, 200px);
+	border-color: green;
 }

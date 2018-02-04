@@ -163,4 +163,16 @@ h4 {
   .card p {
     padding: 20px; }
 
+.input_text {
+  width: 200px;
+  height: 50px;
+  font-family: fantasy;
+  border-color: red; }
+
+.input_number {
+  width: 200px;
+  height: 50px;
+  font-family: fantasy;
+  border-color: green; }
+
 /*# sourceMappingURL=style.css.map */
